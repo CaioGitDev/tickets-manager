@@ -52,6 +52,7 @@ export default function Index() {
         <SideBarItem
           key={item.id}
           icon={iconMapping[item.icon_name]}
+          path={item.path}
           text={item.name}
           active={isActive(item.path)}
         />

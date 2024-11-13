@@ -19,7 +19,7 @@ export default function SidebarMenu({
       <nav className={`h-full flex flex-col  border-r shadow-sm`}>
         <div className="p-4 pb-2 flex justify-between items-center">
           {expanded && (
-            <span className={`font-semibold text-purple-50 text-lg w-52 ml-3`}>
+            <span className={`font-semibold text-purple-500 text-lg w-52 ml-3`}>
               TICKET MANAGER
             </span>
           )}
