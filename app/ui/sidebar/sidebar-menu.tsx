@@ -12,7 +12,7 @@ export default function SidebarMenu({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const [expanded, setExpanded] = useState(true)
+  const [expanded, setExpanded] = useState(false)
 
   return (
     <aside className="h-screen">
