@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Provider from '@/utils/providers'
 
 import Sidebar from '@/app/ui/sidebar/sidebar'
 
@@ -21,13 +23,17 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-zinc-900 text-purple-100 antialiased`}
       >
-        {/* create side bar menu and content area with flex 1 */}
-        <div className="flex h-screen">
-          {/* Sidebar */}
-          <Sidebar />
-          {/* Content */}
-          <div className="flex-1 p-4">{children}</div>
-        </div>
+        <Provider>
+          {/* create side bar menu and content area with flex 1 */}
+          <div className="flex h-screen">
+            {/* Sidebar */}
+            <Sidebar />
+            {/* Content */}
+            <div className="flex-1 p-4">
+              <NuqsAdapter>{children}</NuqsAdapter>
+            </div>
+          </div>
+        </Provider>
       </body>
     </html>
   )
