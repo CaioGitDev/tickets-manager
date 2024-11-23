@@ -32,19 +32,10 @@ import config from 'devextreme/core/config'
 import CustomStore from 'devextreme/data/custom_store'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { RowUpdatingEvent } from 'devextreme/ui/data_grid'
+import { dateTimeEditorOptions } from '@/lib/dev-extreme-options'
 config({
   editorStylingMode: 'underlined',
 })
-
-const dateTimeEditorOptions = {
-  placeholder: 'dd-MM-yyyy',
-  showClearButton: true,
-  useMaskBehavior: true,
-  displayFormat: 'dd-MM-yyyy',
-  openOnFieldClick: true,
-  type: 'date',
-  applyValueMode: 'useButtons',
-}
 
 export default function UsersPage() {
   const queryClient = useQueryClient()

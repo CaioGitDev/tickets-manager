@@ -1,17 +1,14 @@
 'use client'
-import { useUsers } from '@/app/hooks/useUser'
 
 export default function Dashboard() {
-  const { data, isPending, isFetching } = useUsers(10)
-
-  if (isPending) return <div>Loading...</div>
-  if (isFetching) return <div>Fetching...</div>
-
-  console.log(data)
-
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div
+      suppressHydrationWarning
+      className="dx-viewport p-5 overflow-x-hidden "
+    >
+      <h2 className="text-3xl font-bold tracking-tight text-white">
+        Utilizadores
+      </h2>
     </div>
   )
 }
