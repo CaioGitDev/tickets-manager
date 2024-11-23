@@ -20,16 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} bg-zinc-900 text-purple-100 antialiased`}
-      >
+      <body className={`${inter.className}  text-purple-100 antialiased`}>
         <Provider>
           {/* create side bar menu and content area with flex 1 */}
           <div className="flex h-screen">
             {/* Sidebar */}
             <Sidebar />
             {/* Content */}
-            <div className="flex-1 p-4">
+            <div className="bg-secondary-color text-primary-text-light overflow-hidden flex-[4]">
               <NuqsAdapter>{children}</NuqsAdapter>
             </div>
           </div>

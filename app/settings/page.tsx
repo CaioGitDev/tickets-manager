@@ -39,8 +39,10 @@ export default function Settings() {
 
     // add title to the page and description
 
-    <div className="space-y-2">
-      <h2 className="text-3xl font-bold tracking-tight text-white">Settings</h2>
+    <div className="dx-viewport p-5 overflow-x-hidden ">
+      <h2 className="text-3xl font-bold tracking-tight text-white">
+        Utilizadores
+      </h2>
       <Separator />
       <div className="container mx-auto mt-8 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {settingsOptions.map((option, index) => (

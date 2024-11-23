@@ -57,7 +57,7 @@
   }
 }
 .dx-theme-fluent-typography {
-  background-color: #1f1f1f;
+  background-color: var(bg-secondary-color);
   color: #fff;
   font-weight: 400;
   font-size: 14px;
@@ -1857,6 +1857,7 @@
 .dx-button-has-text .dx-button-content,
 .dx-button-has-text .dx-button-content .dx-button-text {
   overflow: hidden;
+  color: #fff;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -2901,7 +2902,7 @@
   border-color: #424242;
 }
 .dx-checkbox-checked .dx-checkbox-icon {
-  color: #292929;
+  color: #fff;
   border-color: #5a03d5;
   background-color: #5a03d5;
   font: 16px/1 DXIcons;
@@ -11648,7 +11649,7 @@
 .dx-datagrid > .dx-datagrid-headers,
 .dx-datagrid > .dx-datagrid-rowsview,
 .dx-datagrid > .dx-datagrid-total-footer {
-  background-color: #292929;
+  background-color: var(bg-secondary-color);
 }
 .dx-datagrid .dx-sort-up {
   font: 14px/1 DXIcons;
@@ -22308,3 +22309,4 @@ input.dx-hidden {
   background: rgba(0,0,0,.01);
   opacity: .01;
 }
+
