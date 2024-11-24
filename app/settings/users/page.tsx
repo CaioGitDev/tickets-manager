@@ -39,8 +39,7 @@ config({
 
 export default function UsersPage() {
   const queryClient = useQueryClient()
-  const [popupVisible, setPopupVisible] = useState(false)
-  const { data, isPending, isFetching, refetch } = useUsers(10)
+  const { data, refetch } = useUsers(10)
   const { data: roleList } = useRole()
   const { data: serviceList } = useService()
 
