@@ -76,7 +76,7 @@ export async function PUT(request: Request) {
         body.name,
         body.email,
         body.active,
-        body.updated_by,
+        '77fceba5-a082-11ef-9737-0242ac170002',
       ],
     )
 
